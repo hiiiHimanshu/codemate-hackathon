@@ -1,20 +1,45 @@
-# Secure Command Executor
+# CodeMate - System Monitoring and File Management Tool
 
-A secure command execution interface with workspace isolation, read-only mode, and safety controls.
+A comprehensive system monitoring and file management tool with a web interface and API endpoints. Built with Python, Flask, and Streamlit.
 
-## Features
+## 🌟 Features
 
-- **Command Routing**: Parse raw input and route to appropriate handlers
-- **Workspace Isolation**: All file operations are restricted to a designated workspace root
-- **Read-Only Mode**: Optional read-only mode that prevents destructive operations
-- **Security Controls**: 
-  - Dangerous command blocking
-  - Path traversal prevention
-  - Subprocess sandboxing
-- **Error Handling**: Friendly error messages mapped from exceptions
-- **Command History**: Track and display command history
-- **Help System**: Built-in help for commands
-- **Execution Timing**: Measure and report command execution time
+### System Monitoring
+- Real-time CPU usage tracking
+- Memory usage statistics
+- Disk space monitoring
+- Process management
+
+### File Operations
+- Basic file operations (create, read, update, delete)
+- Directory navigation and management
+- Path safety and workspace isolation
+- Secure command execution
+
+### Web Interface
+- Streamlit-based user interface
+- Interactive command terminal
+- Real-time system stats display
+- Natural language command processing
+
+## 🚀 Live Deployments
+
+### API Endpoints
+Base URL: `https://code-mate-hack-im51txm1m-hiiihimanshus-projects.vercel.app`
+
+Available endpoints:
+- `/` - API status and endpoint list
+- `/api/system/status` - Overall system status
+- `/api/system/memory` - Detailed memory information
+- `/api/system/disk` - Disk usage statistics
+
+## 🛠️ Technology Stack
+
+- **Backend**: Python, Flask
+- **Frontend**: Streamlit
+- **Monitoring**: psutil
+- **Deployment**: Vercel
+- **Version Control**: GitHub
 
 ## Safety Model
 
