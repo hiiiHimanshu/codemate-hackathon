@@ -1,8 +1,61 @@
-# CodeMate - System Monitoring and File Management Tool
+# CodeMate Terminal
 
-A comprehensive system monitoring and file management tool with a web interface and API endpoints. Built with Python, Flask, and Streamlit.
+A secure and monitored terminal environment built with Streamlit. This application provides a web-based terminal interface with system monitoring capabilities and file management features.
 
-## 🌟 Features
+## Live Demo
+
+The application will be available at: https://codemate-terminal-streamlit.app (after deployment)
+
+> Note: All files are stored under WORKSPACE_ROOT and the disk storage is ephemeral. Make sure to backup important files.
+
+## Features
+
+## Local Development
+
+1. Clone the repository:
+```bash
+git clone https://github.com/hiiiHimanshu/codemate-terminal.git
+cd codemate-terminal
+```
+
+2. Create a virtual environment and install dependencies:
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use: .venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+3. Set up environment variables:
+```bash
+export WORKSPACE_ROOT="./workspace"  # On Windows use: set WORKSPACE_ROOT=./workspace
+export READONLY_MODE="false"
+```
+
+4. Run the application:
+```bash
+streamlit run app.py
+```
+
+## Deployment
+
+The application is deployed on Streamlit Community Cloud with the following configuration:
+
+- Python version: 3.11
+- Environment variables:
+  - WORKSPACE_ROOT=/app/workspace
+  - READONLY_MODE=false
+
+## Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## License
+
+MIT License
+- System monitoring (CPU, Memory, Disk usage)
+- File management capabilities
+- Secure command execution
+- Real-time updates
 
 ### System Monitoring
 - Real-time CPU usage tracking
@@ -15,9 +68,6 @@ A comprehensive system monitoring and file management tool with a web interface 
 - Directory navigation and management
 - Path safety and workspace isolation
 - Secure command execution
-
-### Web Interface
-- Streamlit-based user interface
 - Interactive command terminal
 - Real-time system stats display
 - Natural language command processing

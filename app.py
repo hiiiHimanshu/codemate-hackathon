@@ -11,7 +11,10 @@ import streamlit as st
 from core.registry import create_default_registry
 from core.router import CommandRouter
 from core.session import SessionContext
-from fs.paths import WORKSPACE_ROOT
+
+# Initialize workspace root
+WORKSPACE_ROOT = Path(os.getenv("WORKSPACE_ROOT", "./workspace")).resolve()
+WORKSPACE_ROOT.mkdir(parents=True, exist_ok=True)
 from monitor import stats as monitor_stats
 from ui.render import emit_stdout, emit_stderr, format_status
 
